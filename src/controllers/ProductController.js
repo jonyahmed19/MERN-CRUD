@@ -48,6 +48,8 @@ exports.updateProductByID = async (req, res) => {
   try {
     const id = req.params.id;
 
+    console.log("paramId", id);
+
     const product = await ProductModel.updateOne({ _id: id }, req.body);
     res.status(201).json({
       status: "success",
@@ -63,6 +65,8 @@ exports.updateProductByID = async (req, res) => {
 exports.deleteProduct = async (req, res) => {
   try {
     const id = req.params.id;
+
+    console.log("id", id);
 
     const product = await ProductModel.remove({ _id: id });
     res.status(201).json({
