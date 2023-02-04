@@ -1,0 +1,10 @@
+.nav-item {
+  margin: 0 15px;
+}
+
+table th {
+  background-color: #04aa6d !important;
+}
+table tr {
+  text-align: center;
+}
